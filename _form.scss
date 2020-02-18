@@ -1,0 +1,140 @@
+//Funkar i desktopmode nu, fixa mobliefirst och styla knappen//
+
+.mission {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  background-color: #f1f1f1;
+  padding: 60px;
+  @media (min-width: 700px) {
+    padding-top: 20px;
+  }
+}
+.h1_mission {
+  color: #e32700;
+
+  font-family: "Montserrat";
+  font-size: 20px;
+  font-weight: 800;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 1.33px;
+  text-align: center;
+
+  @media (min-width: 700px) {
+    font-size: 36px;
+  }
+}
+.p_mission {
+  font-family: "Montserrat";
+  font-size: 14px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.89px;
+  text-align: left;
+  justify-self: center;
+  color: #2c4f80;
+  padding: 60px;
+  @media (min-width: 700px) {
+    font-size: 24px;
+  }
+}
+.mars-cont{
+  background: #ffffff;
+  
+}
+.mars-form {
+  display: grid;
+  @media (min-width: 700px) {
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(7, 2fr);
+    gap: 5%;
+    padding: 40px;
+    box-shadow: 0 4px 15px 0 rgba(185, 185, 185, 0.5);
+  }
+}
+.label-first {
+  color: #2c4f80;
+  text-align: left;
+  @media (min-width: 700px) {
+    grid-column: 1 / span 4;
+    grid-row: 1 / span 1;
+  }
+}
+.label-last {
+  color: #2c4f80;
+  text-align: left;
+  @media (min-width: 700px) {
+    grid-row: 1 / span 1;
+    grid-column: 5 / span 5;
+  }
+}
+.dateofbirth {
+  color: #2c4f80;
+  text-align: left;
+
+  @media (min-width: 700px) {
+    grid-row: 1 / span 1;
+    grid-column: 10 / span 3;
+  }
+}
+.prof {
+  width: 100%;
+  color: #2c4f80;
+  text-align: left;
+  @media (min-width: 700px) {
+    grid-row: 2 / span 1;
+    grid-column: 1 / span 4;
+  }
+}
+.prime-skill {
+  width: 100%;
+  color: #2c4f80;
+  text-align: left;
+  @media (min-width: 700px) {
+    grid-row: 2 / span 1;
+    grid-column: 5 / span 5;
+  }
+}
+
+.motiv {
+  
+
+  color: #2c4f80;
+  text-align: left;
+  @media (min-width: 700px) {
+    grid-row: 3/ span 3;
+    grid-column: 1 / span 12;
+  }
+}
+.submit-btn {
+  height: 25px;
+  width: 85px;
+  border: 1px solid rgb(59, 41, 165);
+  border-radius: 4px;
+  box-sizing: border-box;
+  @media (min-width: 700px) {
+    grid-row: 6 /span 1;
+    grid-column: 6 / span 2;
+    
+  }
+}
+textarea {
+  border: 1px solid rgb(59, 41, 165);
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid rgb(59, 41, 165);
+  border-radius: 4px;
+  box-sizing: border-box;
+}

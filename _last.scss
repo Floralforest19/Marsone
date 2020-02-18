@@ -1,0 +1,96 @@
+//Solarbox funkar i desktopläge kanske moblie//
+.solar-cont {
+  display: flex;
+  flex-direction: column;
+  background: #ffffff;
+  padding-top: 30px;
+  
+  @media (min-width: 1010px) {
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    max-width: 1440px;
+  }
+}
+.outerbox{
+  margin-left: 0;
+    background-image: radial-gradient(circle at 50% 39%, #072142, #00132c);
+    height: 362px;
+    width: 382px; 
+    @media(min-width: 1010px){
+      margin-left: 0;
+       
+  width: 462px;
+  height: 462px;
+    }
+}
+.solar_box {
+  
+  height: 262px;
+  width: 262px;
+  padding: 30px;
+  border: solid 3px rgba(37, 37, 37, 0.01);
+ @media(min-width: 1010px){
+   padding: 20px;
+  width: 462px;
+  height: 462px;
+ }
+}
+.solar_text {
+  padding: 30px;
+  justify-content: center;
+  @media(min-width: 1010px){
+  width: 50%;
+  height: 60%;
+  padding-left: 50px;
+  }
+}
+h2{
+  font-family: 'Montserrat';
+  font-size: 24px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 0.92;
+  letter-spacing: 0.89px;
+  color: #e32700;
+  
+}
+p{
+  font-family: 'Montserrat';
+  font-size: 16px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.56;
+  letter-spacing: 0.59px;
+  color: #323232;
+  padding-top: 20px;
+}
+.mars{
+  
+    object-fit: contain;
+  
+    width: 30px;
+    height: 30px;
+    padding: 12% 45%;
+  
+}
+.sun{
+  
+    object-fit: contain;
+ 
+    height: 48px;
+    width: 48px;
+    padding: 10% 43%;
+  
+}
+.earth{
+   
+    object-fit: contain;
+   
+     width: 30px;
+    height: 30px;
+    padding: 0% 45%;
+    
+}

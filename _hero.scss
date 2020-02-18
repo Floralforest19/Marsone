@@ -1,0 +1,94 @@
+.hero_container {
+  background-image: linear-gradient(to bottom, #c15555, #2402029a), 
+  url("/assets/hero-2.jpg");
+  background-size: cover;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(12, 1fr);
+  grid-gap: 2px;
+  justify-items: center;
+  height: calc(50vh);
+
+  @media (min-width: $device-xs) {
+    height: calc(90vh);
+  }
+
+  &__oval_background {
+    grid-column: 1 / span 12;
+    grid-row: 1 / span 12;
+    width: 100%;
+    height: 90%;
+    z-index: 98;
+    background: rgba(21, 52, 98, 0.9) -13%;
+    clip-path: ellipse(71% 40% at 70% 7%);
+    @media (min-width: $device-xs) {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__oval {
+    grid-column: 1 / span 12;
+    grid-row: 1 / span 12;
+    width: 100%;
+    height: 90%;
+    z-index: 99;
+    background: #00132c 61%;
+    clip-path: ellipse(71% 41% at 70% 4%);
+    @media (min-width: $device-xs) {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__text {
+    grid-column: 6 / span 6;
+    grid-row: 1 / span 2;
+    justify-self: center;
+    z-index: 140;
+    @media (min-width: $device-xs) {
+      grid-column: 8 / span 5;
+      grid-row: 2 / span 4;
+    }
+    h1 {
+      color: white;
+      font-family: "Montserrat";
+      font-size: 3.5vmin;
+      font-weight: 800;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: 2.22px;
+      @media (max-width: $device-xs) {
+        font-size: 6vmin;
+      }
+    }
+
+    p {
+      color: #436dac;
+      font-family: "Montserrat";
+      font-size: 2vmin;
+      font-weight: bold;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: 1.48px;
+      @media (max-width: $device-xs) {
+        font-size: 3vmin;
+      }
+    }
+
+    br {
+      @media (max-width: $device-xs) {
+        display: none;
+      }
+    }
+  }
+
+  &__text__rectangle {
+    height: 5px;
+    width: 100%;
+    background-color: white;
+  }
+}
